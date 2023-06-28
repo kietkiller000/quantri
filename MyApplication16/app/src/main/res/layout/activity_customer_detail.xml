@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/grey_2"
+    android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/ll_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/btn_back"
+                android:src="@drawable/ic_back1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/sname1"
+                android:fontFamily="sans-serif-condensed"
+                android:paddingLeft="50dp"
+                android:text="Infomation Of Customer"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+            android:background="@color/blue">
+
+            <ImageView
+                android:layout_marginTop="17dp"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:src="@drawable/icon_u1"/>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="fixed"
+            android:textAlignment="center"
+            android:visibility="visible"
+            app:tabBackground="@color/colorPrimary"
+            app:tabIndicatorColor="@android:color/holo_blue_dark"
+            app:tabTextColor="@color/white"/>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <!--    <LinearLayout-->
+<!--        android:id="@+id/ll_1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/white"-->
+<!--        android:paddingLeft="15dp"-->
+<!--        android:paddingTop="5dp"-->
+<!--        android:paddingBottom="5dp">-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:id="@+id/btn_back"-->
+<!--            android:src="@drawable/ic_back1" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:id="@+id/sname1"-->
+<!--            android:fontFamily="sans-serif-condensed"-->
+<!--            android:paddingLeft="50dp"-->
+<!--            android:text="Infomation Of Customer"-->
+<!--            android:textSize="25sp"-->
+<!--            android:textStyle="bold" />-->
+
+
+<!--    </LinearLayout>-->
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:scrollbars="none"-->
+<!--        android:theme="@style/AppTheme.Fullscreen">-->
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:id="@+id/baotrum">-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+<!--        <ImageView-->
+<!--            android:id="@+id/iv_1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:scaleType="centerCrop"-->
+<!--            android:src="@drawable/ig" />-->
+<!--        </LinearLayout>-->
+
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/rl1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/iv_1"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginTop="60dp"-->
+<!--            android:layout_marginRight="20dp">-->
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="170dp"-->
+<!--                android:layout_height="80dp"-->
+<!--                android:background="@drawable/manage_salon">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/btn_inforSalon"-->
+<!--                    android:layout_width="70dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:src="@drawable/ic_information" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="140dp"-->
+<!--                    android:fontFamily="sans-serif-condensed"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="Salon detail"-->
+<!--                    android:textSize="16dp"-->
+<!--                    android:textStyle="bold" />-->
+
+
+<!--            </RelativeLayout>-->
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="170dp"-->
+<!--                android:layout_height="80dp"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:background="@drawable/manage_salon">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/btn_showbill"-->
+<!--                    android:layout_width="70dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:src="@drawable/ic_show_bill" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="140dp"-->
+<!--                    android:fontFamily="sans-serif-condensed"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="Show bill"-->
+<!--                    android:textSize="16dp"-->
+<!--                    android:textStyle="bold"-->
+
+<!--                    />-->
+
+
+<!--            </RelativeLayout>-->
+
+<!--        </RelativeLayout>-->
+<!--        <RelativeLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:id="@+id/info"-->
+<!--            android:layout_below="@+id/rl1">-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="15dp"-->
+<!--                android:id="@+id/n1"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:layout_marginRight="15dp"-->
+<!--                android:background="@drawable/login_shape"-->
+<!--                android:orientation="vertical">-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:padding="15dp">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:fontFamily="sans-serif-condensed"-->
+<!--                    android:text="Name Customer: "-->
+<!--                    android:textSize="22sp" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:id="@+id/namecus"-->
+<!--                    android:text="Nguyễn Văn b"-->
+<!--                    android:fontFamily="sans-serif-condensed"-->
+<!--                    android:textSize="20sp" />-->
+<!--            </LinearLayout>-->
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/n1"-->
+<!--                android:id="@+id/n2"-->
+<!--                android:layout_marginLeft="15dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:layout_marginRight="15dp"-->
+<!--                android:background="@drawable/login_shape"-->
+<!--                android:orientation="vertical">-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:padding="15dp">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:fontFamily="sans-serif-condensed"-->
+<!--                        android:text="Address: "-->
+<!--                        android:textSize="22sp" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textStyle="bold"-->
+<!--                        android:id="@+id/address_cus"-->
+<!--                        android:text="Hà Nội"-->
+<!--                        android:fontFamily="sans-serif-condensed"-->
+<!--                        android:textSize="20sp" />-->
+<!--                </LinearLayout>-->
+<!--            </LinearLayout>-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="15dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:layout_below="@+id/n2"-->
+<!--                android:id="@+id/n3"-->
+<!--                android:layout_marginRight="15dp"-->
+<!--                android:background="@drawable/login_shape"-->
+<!--                android:orientation="vertical">-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:padding="15dp">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:fontFamily="sans-serif-condensed"-->
+<!--                        android:text="Mobile: "-->
+<!--                        android:textSize="22sp" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textStyle="bold"-->
+<!--                        android:id="@+id/mobilecus"-->
+<!--                        android:text="0393838333"-->
+<!--                        android:fontFamily="sans-serif-condensed"-->
+<!--                        android:textSize="20sp" />-->
+<!--                </LinearLayout>-->
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="15dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:layout_marginRight="15dp"-->
+<!--                android:layout_below="@+id/n3"-->
+<!--                android:id="@+id/n4"-->
+<!--                android:background="@drawable/login_shape"-->
+<!--                android:orientation="vertical">-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:padding="15dp">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:fontFamily="sans-serif-condensed"-->
+<!--                        android:text="Email: "-->
+<!--                        android:textSize="22sp" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textStyle="bold"-->
+<!--                        android:id="@+id/emailcus"-->
+<!--                        android:text="nguyen@Gmail.com"-->
+<!--                        android:fontFamily="sans-serif-condensed"-->
+<!--                        android:textSize="20sp" />-->
+<!--                </LinearLayout>-->
+<!--            </LinearLayout>-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/layout_list"-->
+<!--            android:orientation="vertical"-->
+<!--            android:visibility="gone"-->
+<!--            android:layout_margin="15dp">-->
+<!--            <androidx.recyclerview.widget.RecyclerView-->
+<!--                android:id="@+id/rc_listBillKH"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:visibility="gone"-->
+<!--                android:background="@color/grey_2"-->
+<!--                android:theme="@style/AppTheme.Fullscreen" />-->
+<!--        </LinearLayout>-->
+<!--        </RelativeLayout>-->
+<!--        </RelativeLayout>-->
+
+<!--    </ScrollView>-->
+</LinearLayout>

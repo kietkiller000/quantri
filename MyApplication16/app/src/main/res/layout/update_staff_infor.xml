@@ -1,0 +1,860 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_2"
+    android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_back1"
+            android:id="@+id/btn_back"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingLeft="85dp"
+            android:text="Update Details"
+            android:textSize="25sp"
+            android:textStyle="bold"
+
+            />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_1"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="15dp"
+
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Name Salon"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:hint="Nhập Tên Nhân Viên"
+                    android:id="@+id/name_staff_update"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp"
+
+
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_4"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="15dp"
+
+
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Mobile"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:hint="Nhập số điện thoại"
+                    android:inputType="number"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp"
+                    android:id="@+id/mobile_staff_update"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_5"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Address"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:hint="Nhập địa chỉ"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp"
+                    android:id="@+id/staff_address_update"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_6"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Salary"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:hint="Nhập mức lương cơ bản"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp"
+                    android:id="@+id/staff_salary_update"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_7"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Experience"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:hint="Nhập năm kinh nghiệm"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp"
+                    android:id="@+id/staff_experience_update"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_8"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Work at"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:hint="Tên Salon Đang Làm Việc"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp"
+                    android:id="@+id/idsaloon_staff_update"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                            android:id="@+id/ll_10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/ll_9"
+                            android:layout_marginTop="1dp"
+                            android:background="@color/white"
+                            android:orientation="vertical"
+                            android:padding="15dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-condensed"
+                                android:text="Type of work"
+                                android:textStyle="bold"
+                                android:textSize="17sp"
+
+                                />
+
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="0dp"
+                                android:paddingRight="0dp"
+                                android:gravity="center"
+                                android:textAlignment="center"
+                                android:id="@+id/spinnerwork"
+                                />
+
+
+                        </LinearLayout>
+<!--            <LinearLayout-->
+<!--                android:id="@+id/ll_6"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/ll_5"-->
+<!--                android:layout_marginTop="1dp"-->
+<!--                android:background="@color/white"-->
+<!--                android:orientation="vertical"-->
+<!--                android:padding="15dp">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:fontFamily="sans-serif-condensed"-->
+<!--                    android:text="Address"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textSize="17sp"-->
+
+<!--                    />-->
+
+<!--                <EditText-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:fontFamily="sans-serif-condensed"-->
+<!--                    android:hint="Nhập địa chỉ"-->
+<!--                    android:paddingLeft="0dp"-->
+<!--                    android:paddingRight="0dp"-->
+<!--                    android:id="@+id/staff_address_update"-->
+<!--                    />-->
+
+
+<!--            </LinearLayout>-->
+<!--            <LinearLayout-->
+<!--                android:id="@+id/ll_7"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/ll_6"-->
+<!--                android:layout_marginTop="1dp"-->
+<!--                android:background="@color/white"-->
+<!--                android:orientation="vertical"-->
+<!--                android:padding="15dp"-->
+
+<!--                >-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:fontFamily="sans-serif-condensed"-->
+<!--                    android:text="Area"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textSize="17sp"-->
+
+<!--                    />-->
+
+<!--                <Spinner-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:paddingLeft="0dp"-->
+<!--                    android:paddingRight="0dp"-->
+<!--                    android:gravity="center"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:id="@+id/spinner"-->
+<!--                    />-->
+
+
+<!--            </LinearLayout>-->
+
+            <LinearLayout
+                android:id="@+id/ll_11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_10"
+                android:layout_marginTop="35dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="15dp"
+
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Email"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:hint="Nhập email"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp"
+                    android:id="@+id/staff_email_update" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_11"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Password"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/baseline_visibility_24"
+                    android:fontFamily="sans-serif-condensed"
+                    android:hint="Nhập password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp"
+                    android:id="@+id/password_staff_update" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_saloon_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_12"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:backgroundTint="@color/blue"
+                android:text="UPDATE"
+                android:textSize="15dp"
+
+
+                />
+            <Button
+                android:id="@+id/bt_cancel"
+                android:layout_below="@id/btn_saloon_update"
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/white"
+                android:text="CANCEL"
+                android:textSize="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="20dp"
+                />
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent"-->
+    <!--    android:orientation="vertical">-->
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="80dp"-->
+    <!--        android:gravity="center"-->
+    <!--        android:orientation="vertical">-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="50dp"-->
+    <!--            android:background="@color/colorPrimary"-->
+    <!--            android:gravity="center"-->
+    <!--            android:text="Update Details"-->
+    <!--            android:textColor="#fff"-->
+    <!--            android:textSize="25dp" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginTop="5dp"-->
+    <!--            android:layout_marginBottom="5dp"-->
+    <!--            android:gravity="center"-->
+    <!--            android:text="Saloon Name"-->
+    <!--            android:textSize="20sp" />-->
+
+    <!--        <EditText-->
+    <!--            android:id="@+id/name_saloon_update"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="35dp"-->
+    <!--            android:layout_marginLeft="10dp"-->
+    <!--            android:layout_marginRight="10dp"-->
+    <!--            android:background="@drawable/rounded"-->
+    <!--            android:gravity="center" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginTop="5dp"-->
+    <!--            android:layout_marginBottom="5dp"-->
+    <!--            android:gravity="center"-->
+    <!--            android:text="Mobile"-->
+    <!--            android:textSize="20sp" />-->
+
+    <!--        <EditText-->
+    <!--            android:id="@+id/mobile_saloon_update"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="35dp"-->
+    <!--            android:layout_marginLeft="10dp"-->
+    <!--            android:layout_marginRight="10dp"-->
+    <!--            android:background="@drawable/rounded"-->
+    <!--            android:gravity="center" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginTop="5dp"-->
+    <!--            android:layout_marginBottom="5dp"-->
+    <!--            android:gravity="center"-->
+    <!--            android:text="Address"-->
+    <!--            android:textSize="20sp" />-->
+
+    <!--        <EditText-->
+    <!--            android:id="@+id/address_saloon_update"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="35dp"-->
+    <!--            android:layout_marginLeft="10dp"-->
+    <!--            android:layout_marginRight="10dp"-->
+    <!--            android:background="@drawable/rounded"-->
+    <!--            android:gravity="center" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginTop="5dp"-->
+    <!--            android:layout_marginBottom="5dp"-->
+    <!--            android:gravity="center"-->
+    <!--            android:text="Area"-->
+    <!--            android:textSize="20sp" />-->
+
+    <!--        <FrameLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="40dp">-->
+
+    <!--            <Spinner-->
+    <!--                android:id="@+id/spinner"-->
+    <!--                android:layout_width="312dp"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:layout_gravity="center"-->
+    <!--                android:layout_marginBottom="15px"-->
+
+    <!--                android:textAlignment="center" />-->
+    <!--        </FrameLayout>-->
+
+
+    <!--        <TextView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginTop="5dp"-->
+    <!--            android:layout_marginBottom="5dp"-->
+    <!--            android:gravity="center"-->
+    <!--            android:text="Email"-->
+    <!--            android:textSize="20sp" />-->
+
+    <!--        <EditText-->
+    <!--            android:id="@+id/email_saloon_update"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="35dp"-->
+    <!--            android:layout_marginLeft="10dp"-->
+    <!--            android:layout_marginRight="10dp"-->
+    <!--            android:background="@drawable/rounded"-->
+    <!--            android:gravity="center" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginTop="5dp"-->
+    <!--            android:layout_marginBottom="5dp"-->
+    <!--            android:gravity="center"-->
+    <!--            android:text="Password"-->
+    <!--            android:textSize="20sp" />-->
+
+    <!--        <EditText-->
+    <!--            android:id="@+id/password_saloon_update"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="35dp"-->
+    <!--            android:layout_marginLeft="10dp"-->
+    <!--            android:layout_marginRight="10dp"-->
+    <!--            android:background="@drawable/rounded"-->
+    <!--            android:gravity="center" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginTop="5dp"-->
+    <!--            android:layout_marginBottom="5dp"-->
+    <!--            android:gravity="center"-->
+    <!--            android:text="Choose Time Working"-->
+    <!--            android:textSize="20sp" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/timework_saloon_update"-->
+    <!--            android:layout_width="169dp"-->
+    <!--            android:layout_height="35dp"-->
+    <!--            android:layout_marginLeft="10dp"-->
+    <!--            android:layout_marginRight="10dp"-->
+    <!--            android:textColor="@color/white"-->
+    <!--            android:backgroundTint="@color/purple_700"-->
+    <!--            android:text="click to choose"-->
+    <!--            android:background="@drawable/rounded"-->
+    <!--            android:gravity="center" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/btn_saloon_update"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginLeft="25dp"-->
+    <!--            android:layout_marginTop="10dp"-->
+    <!--            android:layout_marginRight="25dp"-->
+    <!--            android:background="@color/colorPrimary"-->
+    <!--            android:gravity="center"-->
+    <!--            android:text="Update"-->
+
+    <!--            android:textAllCaps="false"-->
+    <!--            android:textSize="21dp" />-->
+    <!--    </LinearLayout>-->
+    <!--</RelativeLayout>-->
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:orientation="vertical">-->
+<!--    <LinearLayout-->
+<!--        android:id="@+id/ll_1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/white"-->
+<!--        android:paddingLeft="15dp"-->
+<!--        android:paddingTop="5dp"-->
+<!--        android:paddingBottom="5dp">-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:src="@drawable/ic_back1"-->
+<!--            android:id="@+id/btn_back"/>-->
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:fontFamily="sans-serif-condensed"-->
+<!--            android:paddingLeft="85dp"-->
+<!--            android:text="Update Details"-->
+<!--            android:textSize="25sp"-->
+<!--            android:textStyle="bold"-->
+<!--            />-->
+<!--    </LinearLayout>-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="center"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <ScrollView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:scrollbars="none"-->
+<!--            android:theme="@style/AppTheme.Fullscreen">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="vertical">-->
+<!--                -->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:layout_marginBottom="5dp"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="Name"-->
+<!--                    android:textSize="20sp" />-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/name_staff_update"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="35dp"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:layout_marginRight="10dp"-->
+<!--                    android:background="@drawable/rounded"-->
+<!--                    android:gravity="center" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:layout_marginBottom="5dp"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="Mobile"-->
+<!--                    android:textSize="20sp" />-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/mobile_staff_update"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="35dp"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:layout_marginRight="10dp"-->
+<!--                    android:background="@drawable/rounded"-->
+<!--                    android:gravity="center" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:layout_marginBottom="5dp"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="Address"-->
+<!--                    android:textSize="20sp" />-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/staff_address_update"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="35dp"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:layout_marginRight="10dp"-->
+<!--                    android:background="@drawable/rounded"-->
+<!--                    android:gravity="center" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:layout_marginBottom="5dp"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="Salary"-->
+<!--                    android:textSize="20sp" />-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/staff_salary_update"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="35dp"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:layout_marginRight="10dp"-->
+<!--                    android:background="@drawable/rounded"-->
+<!--                    android:gravity="center" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:layout_marginBottom="5dp"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="Experience"-->
+<!--                    android:textSize="20sp" />-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/staff_experience_update"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="35dp"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:layout_marginRight="10dp"-->
+<!--                    android:background="@drawable/rounded"-->
+<!--                    android:gravity="center" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:layout_marginBottom="5dp"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="Idsalon"-->
+<!--                    android:textSize="20sp" />-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/idsaloon_staff_update"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="35dp"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:layout_marginRight="10dp"-->
+<!--                    android:background="@drawable/rounded"-->
+<!--                    android:gravity="center" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:layout_marginBottom="5dp"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="Work"-->
+<!--                    android:textSize="20sp" />-->
+
+<!--                <FrameLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="40dp">-->
+
+<!--                    <Spinner-->
+<!--                        android:id="@+id/spinnerwork"-->
+<!--                        android:layout_width="312dp"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:layout_marginBottom="15px"-->
+
+<!--                        android:textAlignment="center" />-->
+<!--                </FrameLayout>-->
+
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:layout_marginBottom="5dp"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="Email"-->
+<!--                    android:textSize="20sp" />-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/staff_email_update"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="35dp"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:layout_marginRight="10dp"-->
+<!--                    android:background="@drawable/rounded"-->
+<!--                    android:gravity="center" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:layout_marginBottom="5dp"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="Password"-->
+<!--                    android:textSize="20sp" />-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/password_staff_update"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="35dp"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:layout_marginRight="10dp"-->
+<!--                    android:background="@drawable/rounded"-->
+<!--                    android:gravity="center" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/btn_saloon_update"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="25dp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_marginRight="25dp"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:background="@drawable/button_custom_red"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="Update"-->
+
+<!--                    android:textAllCaps="false"-->
+<!--                    android:textSize="21dp" />-->
+<!--            </LinearLayout>-->
+<!--        </ScrollView>-->
+<!--    </LinearLayout>-->
+<!--</LinearLayout>-->

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/chao"-->
+<!--            android:text="Chào ADMIN"-->
+<!--            android:textSize="20dp"-->
+<!--            android:padding="5dp"/>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rl1"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/search1"
+            app:iconifiedByDefault="false"
+            android:layout_margin="2dp"
+            android:backgroundTintMode="multiply"
+            android:backgroundTint="@color/blue"
+            android:theme="@style/SearchViewStyle"
+            android:background="@drawable/manage_salon"
+            app:queryHint="Nhập tên khách hàng, số điện thoại,..."
+
+            tools:ignore="MissingConstraints">
+        </androidx.appcompat.widget.SearchView>
+
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:id="@+id/thaythe"
+            >
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:src="@drawable/icon_notfound"
+                android:id="@+id/notfound"
+                />
+            <TextView
+                android:id="@+id/noservice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:text="No Matching Results Were Found"
+                android:textColor="@color/background_color"
+                android:textSize="20dp"
+                />
+
+        </LinearLayout>
+        <!--            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/adminpanelmonitor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/grey_2"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/search1"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="16dp"
+            android:background="@color/background_color"
+            android:backgroundTint="@color/background_color"
+            android:src="@drawable/ic_add"
+            android:visibility="gone"
+            app:fabSize="normal"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="MissingConstraints"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+    </LinearLayout>
+</LinearLayout>
